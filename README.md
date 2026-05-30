@@ -6,7 +6,11 @@
 [![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)](https://github.com/sajidkhan001/B2BInvoiceAutomation)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-Automate your B2B document workflows from email to Google Sheets — without ever writing source binaries to disk. Designed for Windows desktop deployment, this application ingests invoices, credit notes, purchase orders, delivery notes, and receipts from IMAP or Gmail, parses them in-memory with pdfplumber, validates extracted fields with Pydantic, optionally refines low-confidence extractions via OpenAI or Anthropic, and writes structured records to a Google Sheets ledger.
+Automate your B2B document workflows from email to Google Sheets — entirely on your own machine, no external database required.
+
+Most automation platforms store your documents and extracted data in a cloud database, charging monthly fees and creating a data-leave boundary you may not want. This application is different: everything stays on-device. Documents are parsed in-memory, secrets are held in your Windows Credential Manager, preferences live in local AppData, and the only outbound connection is to Google Sheets (or your IMAP server). No database to provision, no monthly bill, no third party holding your B2B data.
+
+Designed for Windows desktop deployment, it ingests invoices, credit notes, purchase orders, delivery notes, and receipts from IMAP or Gmail, parses them in-memory with pdfplumber, validates extracted fields with Pydantic, optionally refines low-confidence extractions via OpenAI or Anthropic, and writes structured records to a Google Sheets ledger — without ever writing source binaries to disk.
 
 ---
 
